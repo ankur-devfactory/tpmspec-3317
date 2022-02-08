@@ -10,7 +10,7 @@ Application to use AWS Connect API's to create AWS Connect Contacts flow
 * Create a CloudFormation stack from the Template
 * Once done Cloudformation would deploy the website on AWS Cloudfront and you would get its access URL from Output parameter of CloudFormation.
 * Configure the application with required credentials:
-   - Populate access key/secret key as your Access key and password.
+   - Populate access key/secret key as your Access key and secret key.
    - Backup DB: Name of the dynamo db table for backing up contact flows
    - ARN Mapping: Name of the dynamo db table created for mapping ARNs of objects between the two Amazon Connect instances
    - Instance ID: Would be your AWS Connect Instance ID. Follow this link to know how to get the AWS Connect Instance ID.
