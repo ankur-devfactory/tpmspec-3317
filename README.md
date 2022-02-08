@@ -77,6 +77,5 @@ Application to use AWS Connect API's to create AWS Connect Contacts flow
          },
          Type: "MessageParticipant"
       }
-   ]
-}
-```
+   ]}
+
