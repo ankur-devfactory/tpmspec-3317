@@ -130,11 +130,10 @@ Resources:
                         Action:
                             - "s3:GetObject"
                         Effect: "Allow"
-                        Principal:
-                            CanonicalUser:
-                                Fn::GetAtt: [ CFCloudFrontDistributionAccessIdentity , S3CanonicalUserId ]
+                        Principal: "*"
                         Resource:
-                            !Sub ${createWebSiteS3Bucket.Arn}/contactflowsite/*
+                            !Sub ${createWebSiteS3Bucket.Arn}/*
+                            
 
     CFCloudFrontDistributionAccessIdentity:
         Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
